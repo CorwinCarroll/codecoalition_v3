@@ -993,13 +993,3 @@
 
 @import 'foundation';
 
-body, html {
-  height: 100%;
-  width: 100%;
-}
-
-.page, .off-canvas-wrap, .inner-wrap {
-  height: 100%;
-}
-
-$accordion-content-padding: $column-gutter/1;
