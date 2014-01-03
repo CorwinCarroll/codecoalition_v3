@@ -1,2 +1,144 @@
-<h1>IosbcSec00#labeluse</h1>
-<p>Find me in app/views/iosbc_sec00/labeluse.html.erb</p>
+<div class="row">
+  <div class="large-3 columns">
+  <%= render 'layouts/iosbc_nav' %>
+  </div>
+
+
+  <div class="large-9 columns">
+		<%= render 'layouts/sec00_firstapp_nav' %>
+			<div id="mediaplayer">
+			<script type="text/javascript">
+			    jwplayer("mediaplayer").setup({
+			        file: "https://dpremmz485l7o.cloudfront.net/section00/labeluse.mp4",
+			        image: "#",
+			        width: "100%",
+			        aspectratio: "16:9",
+			        fallback: 'false',
+			    });
+			</script>
+			<script type="text/javascript">
+				var theVideo;
+				jwplayer().onReady(function(){
+				theVideo = document.querySelector('video');
+				theVideo.defaultPlaybackRate = 1.0;
+				theVideo.playbackRate = 1.0;
+				if (jwplayer().getRenderingMode() == "flash"){
+					return;
+				}
+				jwplayer().addButton(
+			    image:"https://s3-us-west-2.amazonaws.com/ios102videos/speed-25.png",
+			    ".25X", 
+			    function() {
+				  if (navigator.appName.indexOf("Microsoft") != -1){
+					theVideo.playbackRate = 0.25;
+				  } else {
+					jwplayer().seek(jwplayer().getPosition());
+					jwplayer().onSeek(function(){theVideo.playbackRate = 0.25;});
+				  }
+			    },
+			    "fourth"
+				);
+				jwplayer().addButton(
+			    image:"https://s3-us-west-2.amazonaws.com/ios102videos/speed-5.png"
+			    ".5X", 
+			    function() {
+				  if (navigator.appName.indexOf("Microsoft") != -1){
+					theVideo.playbackRate = 0.5;
+				  } else {
+					jwplayer().seek(jwplayer().getPosition());
+					jwplayer().onSeek(function(){theVideo.playbackRate = 0.5;});
+				  }
+			    },
+			    "half"
+				);
+				jwplayer().addButton(
+			    image:"https://s3-us-west-2.amazonaws.com/ios102videos/speed-1.png"
+			    "1X", 
+			    function() {
+				  if (navigator.appName.indexOf("Microsoft") != -1){
+					theVideo.playbackRate = 1.0000001;
+					theVideo.playbackRate = 1.0;
+				  } else {
+					jwplayer().seek(jwplayer().getPosition());
+					jwplayer().onSeek(function(){theVideo.playbackRate = 1.0;});
+						if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+							theVideo.playbackRate = 1.0;
+						}
+					}
+			    },
+			    "1X"
+				);
+				jwplayer().addButton(
+			    image:"https://s3-us-west-2.amazonaws.com/ios102videos/speed-1-5.png"
+			    "1.5X", 
+			    function() {
+				  if (navigator.appName.indexOf("Microsoft") != -1){
+					theVideo.playbackRate = 1.5;
+				  } else {
+					jwplayer().seek(jwplayer().getPosition());
+					jwplayer().onSeek(function(){theVideo.playbackRate = 1.5;});
+				  }
+			    },
+			    "oneandahalf"
+				);
+				jwplayer().addButton(
+			    image:"https://s3-us-west-2.amazonaws.com/ios102videos/speed-2.png"
+			    "2X", 
+			    function() {
+				  if (navigator.appName.indexOf("Microsoft") != -1){
+					theVideo.playbackRate = 2.0;
+				  } else {
+					jwplayer().seek(jwplayer().getPosition());
+					jwplayer().onSeek(function(){theVideo.playbackRate = 2.0;});
+				  }
+			    },
+			    "2X"
+				);
+				var button1 = document.querySelectorAll("button")[0];
+				var button2 = document.querySelectorAll("button")[1];
+				var button3 = document.querySelectorAll("button")[2];
+				var button4 = document.querySelectorAll("button")[3];
+				var button5 = document.querySelectorAll("button")[4];
+				jwplayer().onTime(function(event) {
+				if (event.position >=1){
+					button1.style.zIndex = "0";
+					button2.style.zIndex = "0";
+					button3.style.zIndex = "0";
+					button4.style.zIndex = "0";
+					button5.style.zIndex = "0";
+				} else {
+					button1.style.zIndex = "-1";
+					button2.style.zIndex = "-1";
+					button3.style.zIndex = "-1";
+					button4.style.zIndex = "-1";
+					button5.style.zIndex = "-1";
+				}
+				});
+				});
+			</script>
+		</div>
+      
+          <h1>Label Use</h1>
+          <hr>
+          	<dl class="tabs" data-tab>
+							  <dd class="active"><a href="#panel105-1">Notes</a></dd>
+							  <dd><a href="#panel105-2">Discussion</a></dd>
+							  <dd><a href="#panel105-3">Assets</a></dd>
+							</dl>
+							<div class="tabs-content">
+							  <div class="content active" id="panel105-1">
+							    <p>First panel content goes here...</p>
+							  </div>
+							  <div class="content" id="panel105-2">
+							    <p>Second panel content goes here...</p>
+							  </div>
+							  <div class="content" id="panel105-3">
+							      <p>Using psychohistory, Seldon has discovered the declining nature of the Empire, angering the aristocratic members of the Committee of Public Safety, the de facto rulers of the Empire. The Committee considers Seldon&#39;s views and statements treasonous, and he is arrested along with young mathematician Gaal Dornick, who has arrived on Trantor to meet Seldon. Seldon is tried by the Committee and defends his beliefs, explaining his theories and predictions, including his belief that the Empire will collapse in 500
+							      </p>
+							  </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+
+</div>
