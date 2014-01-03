@@ -6,6 +6,21 @@ get "dashboard" => "pages#dashboard"
 get "courses" => "pages#courses"
 get "discussion" => "pages#discussion"
 get "iosbootcamp" => "pages#iosbootcamp"
+
+# Section 00
+get "iosbc_sec00/tour"
+get "iosbc_sec00/xcode"
+get "iosbc_sec00/appleid"
+get "iosbc_sec00/intro"
+get "iosbc_sec00/setup"
+get "iosbc_sec00/labeluse"
+get "iosbc_sec00/button"
+get "iosbc_sec00/color"
+get "iosbc_sec00/uitextfield"
+get "iosbc_sec00/uicontrollers"
+get "iosbc_sec00/ios102next"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
