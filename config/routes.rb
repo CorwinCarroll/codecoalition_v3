@@ -6,6 +6,7 @@ get "dashboard" => "pages#dashboard"
 get "courses" => "pages#courses"
 get "discussion" => "pages#discussion"
 get "iosbootcamp" => "pages#iosbootcamp"
+get "discussion" => "pages#discussion"
 
 # Section 00
 get "iosbc_sec00/tour"

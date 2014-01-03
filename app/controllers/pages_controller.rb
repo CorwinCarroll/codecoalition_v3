@@ -13,4 +13,7 @@ class PagesController < ApplicationController
 
   def iosbootcamp
   end
+
+  def discussion
+  end
 end
