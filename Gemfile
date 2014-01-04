@@ -15,7 +15,8 @@ gem 'turbolinks'
 gem 'devise', "~> 3.2.2"
 gem 'figaro' 
 gem 'mongoid' 
-
+gem 'rolify'
+gem 'simple_form'
 
 group :development do
 	gem 'better_errors'
