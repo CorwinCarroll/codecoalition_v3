@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
-  <script type='text/javascript' src='https://dpremmz485l7o.cloudfront.net/jwplayer.js'></script>
-  <script type="text/javascript">jwplayer.key="hZvEiIsQXN3dNFjpBciJIxm17Rgv00tGFukLpg==";</script>
-  
+    <script type='text/javascript' src='https://dpremmz485l7o.cloudfront.net/jwplayer.js'></script>
+    <script type="text/javascript">jwplayer.key="hZvEiIsQXN3dNFjpBciJIxm17Rgv00tGFukLpg==";</script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title><%= content_for?(:title) ? yield(:title) : "Code Coalition" %></title>
 
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -16,13 +17,18 @@
   <body>
     <%= render 'layouts/mainnav' %>
        <div class="section-inner", style="padding-top:4%">
-        
-           <%= yield %>
-           </div>
-         </div>
-        </div>
+          <% flash.each do |name, msg| %>
+            <%= content_tag(:div, msg, class: "alert alert-info") %>
+          <% end %>
+        <%= yield %>
+       </div>
+     </div>
+    </div>
+    
+    <footer>
+    </footer>
 
-     <a class="exit-off-canvas"></a>
+    <a class="exit-off-canvas"></a>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" defer></script>
 

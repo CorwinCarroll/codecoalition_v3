@@ -1,4 +1,13 @@
 Codecoalition3::Application.routes.draw do
+devise_for :users
+
+  def after_sign_in_path_for(resource)
+   dashboard_path
+  end
+
+  def after_sign_out_path_for(resource)
+   courses_path
+  end
 
 # top level routes
 root "pages#home"
