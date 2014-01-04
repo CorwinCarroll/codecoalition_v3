@@ -15,9 +15,12 @@
 
   <body>
     <%= render 'layouts/mainnav' %>
+
        <div class="section-inner", style="padding-top:4%">
-        
-           <%= yield %>
+            <% flash.each do |name, msg| %>
+              <%= content_tag(:div, msg, class: "alert alert-info") %>
+            <% end %> 
+            <%= yield %>
            </div>
          </div>
         </div>

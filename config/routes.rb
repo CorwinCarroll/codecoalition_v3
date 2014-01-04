@@ -1,4 +1,7 @@
 Codecoalition3::Application.routes.draw do
+#devise
+devise_for :users
+resources :users
 
 # top level routes
 root "pages#home"

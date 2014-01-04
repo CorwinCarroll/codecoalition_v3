@@ -20,10 +20,19 @@ Codecoalition3::Application.configure do
   config.active_support.deprecation = :log
 
   # Raise an error on page load if there are pending migrations
-  config.active_record.migration_error = :page_load
+  # config.active_record.migration_error = :page_load
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  # ActionMailer Config
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  # A dummy setup for development - no deliveries, but logged
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = false
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
+
 end
