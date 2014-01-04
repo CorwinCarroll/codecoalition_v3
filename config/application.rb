@@ -8,6 +8,17 @@ Bundler.require(*Rails.groups(:assets => %w(development test))) if defined?(Bund
 
 module Codecoalition3
   class Application < Rails::Application
+
+    # don't generate RSpec tests for views and helpers
+    config.generators do |g|
+      
+      g.test_framework :rspec, fixture: true
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
+      
+      
+      g.view_specs false
+      g.helper_specs false
+    end
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -20,5 +31,9 @@ module Codecoalition3
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.filter_parameters += [:password, :password_confirmation]
+
+    # Heroku requires this to be false
+    config.assets.initialize_on_precompile=false
+
   end
 end
