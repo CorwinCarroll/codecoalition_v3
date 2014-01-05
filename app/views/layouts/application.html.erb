@@ -15,11 +15,10 @@
   </head>
 
   <body>
+
     <%= render 'layouts/mainnav' %>
        <div class="section-inner", style="padding-top:4%">
-          <% flash.each do |name, msg| %>
-            <%= content_tag(:div, msg, class: "alert alert-info") %>
-          <% end %>
+          <%= render 'layouts/messages' %>
         <%= yield %>
        </div>
      </div>
