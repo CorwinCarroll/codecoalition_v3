@@ -17,6 +17,7 @@ gem 'cancan', "~> 1.6.10"
 gem 'figaro'
 gem 'rolify', "~> 3.2.0"
 gem 'simple_form', "~> 3.0.1"
+gem 'protected_attributes'
 
 group :development do
   gem 'better_errors'

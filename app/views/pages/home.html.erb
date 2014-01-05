@@ -2,5 +2,8 @@
   <div class="large-12 columns">
 		<h1>Pages#home</h1>
 		<p>Find me in app/views/pages/home.html.erb</p>
+		<% @users.each do |user| %>
+  		<p>User: <%= user.name %></p>
+  	<% end %>
 	</div>
 </div>
