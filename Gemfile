@@ -14,6 +14,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise', "~> 3.2.2"
 gem 'figaro'
+gem 'rolify', "~> 3.2.0"
+gem 'simple_form', "~> 3.0.1"
 
 group :development do
   gem 'better_errors'
@@ -30,7 +32,7 @@ group :production do
 end
 
 group :development, :test do
-	gem 'sqlite3'
+  gem 'sqlite3'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
 end
