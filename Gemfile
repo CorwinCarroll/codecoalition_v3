@@ -13,6 +13,7 @@ gem 'jquery-turbolinks'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise', "~> 3.2.2"
+gem 'cancan', "~> 1.6.10"
 gem 'figaro'
 gem 'rolify', "~> 3.2.0"
 gem 'simple_form', "~> 3.0.1"
