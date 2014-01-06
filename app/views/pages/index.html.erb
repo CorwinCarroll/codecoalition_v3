@@ -1,3 +1,42 @@
-
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<div class="row">
+  <div class="large-12 columns">
+		<div id="welcome" class="hero-unit span7">
+		  <h1>Code Coalition</h1>
+		  <h3>Learn by building!</h3>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="large-4 columns">
+	    <ul class="pricing-table"> 
+		    <li class="title">Free Content</li> 
+		   	 <li class="price">Free!</li>
+		     <li class="description">First 60 Videos</li> 
+		     <li class="cta-button">
+		     <%= link_to 'Subscribe', content_silver_path, :class => 'button' %>
+		     </li> 
+	     </ul>
+	    </div>
+	    <div class="large-4 columns">
+		    <ul class="pricing-table"> 
+			    <li class="title">iOS Bootcamp</li> 
+			   	 <li class="price">$125</li>
+			     <li class="description">300+ Videos, learn to build 14 applications</li> 
+			     <li class="cta-button">
+			     <%= link_to 'Subscribe', content_iosbc_path, :class => 'button' %>
+			     </li> 
+		     </ul>
+		    </div>
+	  		<div class="large-4 columns">
+	    	 <ul class="pricing-table"> 
+			    <li class="title">iOS Bootcamp</li> 
+			   	 <li class="price">$125</li>
+			     <li class="description">300+ Videos, learn to build 14 applications</li> 
+			     <li class="cta-button">
+			     <%= link_to 'Subscribe', content_platinum_path, :class => 'button' %>
+			     </li> 
+		     </ul>
+		    </div>
+	  </div>
+	</div>
+</div>	
