@@ -1,4 +1,7 @@
 Codecoalition3::Application.routes.draw do
+  get "content/free_iosbc"
+  get "content/iosbc"
+  get "content/platinum"
 devise_for :users
 
   authenticated :user do
