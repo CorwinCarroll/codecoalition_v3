@@ -18,6 +18,8 @@ gem 'figaro'
 gem 'rolify', "~> 3.2.0"
 gem 'simple_form', "~> 3.0.1"
 gem 'protected_attributes'
+gem "stripe", "~>1.9.9"
+gem "stripe_event", "~> 1.0.0"
 
 group :development do
   gem 'better_errors'
