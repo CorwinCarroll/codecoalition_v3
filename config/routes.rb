@@ -1,17 +1,18 @@
 Codecoalition3::Application.routes.draw do
 devise_for :users
+
+  authenticated :user do
+    root :to => 'pages#index', as: :authenticated_root
+  end
+
+  unauthenticated do
+    root to: "pages#index", as: :unauthenticated_root
+  end
+
 resources :users
 
-  def after_sign_in_path_for(resource)
-   dashboard_path
-  end
-
-  def after_sign_out_path_for(resource)
-   courses_path
-  end
-
 # top level routes
-root "pages#home"
+root "pages#index"
 get "dashboard" => "pages#dashboard"
 get "courses" => "pages#courses"
 get "discussion" => "pages#discussion"
