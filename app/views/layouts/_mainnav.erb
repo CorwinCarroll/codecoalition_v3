@@ -20,20 +20,20 @@
           <li><a href="/">Home</a></li>
           <li><a href="/">About</a></li>
           <!-- <li><a href="/teaching">Teaching</a></li> -->
-          <li><a href="/">Discussion</a></li>
+          <li><%= link_to('Discussion', discussion_path) %></li>
           <!-- <li><a href="/studio">Studio</a></li> -->
           <!-- <li><a href="/contact">Contact</a></li> -->
-          <li><a href="/blog/zurb-foundation-quick-tips/">Zurb Foundation</a></li>
-          <li><a href="/updates/">Updates via Email or RSS</a></li>
+          <li><a href="/">More Courses</a></li>
+          <li><a href="/updates/">Subscribe to our Newsletter</a></li>
 
         <li class="has-form">
           <form class="search-form" method="get" action="http://www.google.com/search">
-            <input class="hide" type="checkbox"  name="sitesearch" value="manofstone.com" checked >
+            <input class="hide" type="checkbox"  name="e-mail" value="codecoalition.com" checked >
             <div class="row">
               <div class="large-10 large-centered columns">
                 <div class="row collapse">
                   <div class="large-9 small-10 columns">
-                    <input type="text" placeholder="The Finder" name="q">
+                    <input type="text" placeholder="Enter Your Email" name="q">
                   </div>
                   <div class="large-3 small-2 columns">
                     <a href="#" class="success button expand search-submit-button">&raquo;</a>
@@ -63,7 +63,7 @@
           <!-- /li -->
         <!-- % end % -->
           <li><label>My Courses</label></li>
-          <li><a href="#">iOS Bootcamp</a></li>
+          <li><%= link_to('iOSBootcamp', content_iosbc_path) %></li>
       </ul>
     </aside>
 

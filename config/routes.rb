@@ -21,7 +21,7 @@ get "iosbootcamp" => "pages#iosbootcamp"
 get "discussion" => "pages#discussion"
 
 # Permissions test
-get "content/free_iosbc"
+get "content/free_iosbc" 
 get "content/iosbc"
 get "content/platinum"
 

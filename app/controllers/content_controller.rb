@@ -5,7 +5,7 @@ class ContentController < ApplicationController
     if (current_user.has_role? :free_iosbc) || (current_user.has_role? :admin) || (current_user.has_role? :iosbc) || (current_user.has_role? :platnium)
       render :free_iosbc
     else
-      redirect_to :back, :alert => 'Access limited to Free Content subscribers.'
+      redirect_to :root, :notice => 'Please Sign Up to Acces of Free Content'
     end
   end
 
@@ -13,7 +13,7 @@ class ContentController < ApplicationController
    if (current_user.has_role? :iosbc) || (current_user.has_role? :admin)  || (current_user.has_role? :platnium)
       render :iosbc
     else
-      redirect_to :back, :alert => 'Access limited to iOS Bootcamp Students.'
+      redirect_to :root, :alert => 'Access limited to iOS Bootcamp Students.'
     end
   end
 
@@ -21,7 +21,7 @@ class ContentController < ApplicationController
     if (current_user.has_role? :platinum) || (current_user.has_role? :admin)
       render :platinum
     else
-      redirect_to :back, :alert => 'Access limited to Full Access subscribers.'
+      redirect_to :root, :alert => 'Access limited to Full Access subscribers.'
     end
   end
 end
