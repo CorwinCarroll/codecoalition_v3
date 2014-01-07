@@ -1,8 +1,6 @@
 Codecoalition3::Application.routes.draw do
-  get "content/free_iosbc"
-  get "content/iosbc"
-  get "content/platinum"
-devise_for :users
+
+devise_for :users, :controllers => { :registrations => 'registrations' }
 
   authenticated :user do
     root :to => 'pages#index', as: :authenticated_root
@@ -21,6 +19,11 @@ get "courses" => "pages#courses"
 get "discussion" => "pages#discussion"
 get "iosbootcamp" => "pages#iosbootcamp"
 get "discussion" => "pages#discussion"
+
+# Permissions test
+get "content/free_iosbc"
+get "content/iosbc"
+get "content/platinum"
 
 # Section 00
 get "iosbc_sec00/tour"
