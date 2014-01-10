@@ -19,6 +19,13 @@
 
 $(function(){ $(document).foundation(); });
 
-$('a.left-off-canvas-toggle').click(function() {
-  $('.inner-wrap').css('min-height', $(window).height() - $('footer').outerHeight() + 'px');
+$(function() {
+    var timer;
+
+    $(window).resize(function() {
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+            $('.inner-wrap').css("min-height", $(window).height() + "px" );
+        }, 40);
+    }).resize();
 });
