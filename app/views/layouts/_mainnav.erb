@@ -57,13 +57,10 @@
           <li><%= link_to('Login', new_user_session_path) %></li>
           <li><%= link_to('Register', new_user_registration_path) %></li>
         <% end %>
-          <!-- % if current_user.has_role? :admin % -->
-          <!-- li -->
-            <!-- %= link_to 'Admin', users_path % -->
-          <!-- /li -->
-        <!-- % end % -->
-          <li><label>My Courses</label></li>
-          <li><%= link_to('iOSBootcamp', content_iosbc_path) %></li>
+          <% if can? :view, @iosbc %>
+            <li><label>My Courses</label></li>
+            <li><%= link_to('iOSBootcamp', content_iosbc_path) %></li>
+          <% end %>
       </ul>
     </aside>
 
