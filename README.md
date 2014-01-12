@@ -1,8 +1,8 @@
-Code Coalition 2014 - Platform Revamp Alpha
+Code Coalition 2014 - Alpha
 ================================
 
-Ruby 2.0.0p353 (2013-11-22 revision 43784)
-Rails 4.0.2 
+* Ruby 2.0.0p353 (2013-11-22 revision 43784)
+* Rails 4.0.2 
 
 To Do:
 --------------------------------
@@ -16,6 +16,7 @@ To Do:
 * Update DB Tables to mirror previous platform for Users
 * Inspect CSS to find confilicting video player elements (creating the wings on the clocks)
 * Update "My Courses" view permission
+# Add Stripe Payments
 * Reconfigure Administative User Page find param:id error
 * Add Profile Pages
 * Reconfigure cucumber related tests
