@@ -1,4 +1,4 @@
-
+11
 jQuery.fn.flexymenu = function(options){
 	var settings = {
 		 speed	 			: 300     				// dropdown speed (ms)
@@ -32,7 +32,7 @@ jQuery.fn.flexymenu = function(options){
 	screenSize();
 	
 	$(window).resize(function() {
-		if(lastScreenWidth <= 768 && window.innerWidth > 768){
+		if(lastScreenWidth <= 1010 && window.innerWidth > 1010){
 			unbindEvents();
 			hideCollapse();
 			bindHover();
@@ -41,7 +41,7 @@ jQuery.fn.flexymenu = function(options){
 				bigScreen = true;
 			}
 		}
-		if(lastScreenWidth > 768 && window.innerWidth <= 768){
+		if(lastScreenWidth > 1010 && window.innerWidth <= 1010){
 			unbindEvents();
 			showCollapse();
 			bindClick();
@@ -54,7 +54,7 @@ jQuery.fn.flexymenu = function(options){
 	});
 	
 	function screenSize(){
-		if(window.innerWidth <= 768){
+		if(window.innerWidth <= 1010){
 			showCollapse();
 			bindClick();
 			if(bigScreen == true){

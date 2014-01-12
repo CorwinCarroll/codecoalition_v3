@@ -7,6 +7,7 @@ group :assets do
   gem "foundation-rails", "~> 5.0.2.0"
   gem "compass", "~> 0.12.2"
   gem 'coffee-rails', '~> 4.0.0'
+  gem 'foundation-icons-sass-rails', "~> 3.0.0"
 end
 
 gem 'jquery-turbolinks'

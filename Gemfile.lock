@@ -88,6 +88,9 @@ GEM
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
+    foundation-icons-sass-rails (3.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     foundation-rails (5.0.2.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
@@ -221,6 +224,7 @@ DEPENDENCIES
   email_spec (~> 1.5.0)
   factory_girl_rails
   figaro
+  foundation-icons-sass-rails (~> 3.0.0)
   foundation-rails (~> 5.0.2.0)
   jbuilder (~> 1.2)
   jquery-rails
