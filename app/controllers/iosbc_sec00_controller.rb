@@ -1,6 +1,6 @@
 class IosbcSec00Controller < ApplicationController
   before_filter :authenticate_user!
-  
+
   def tour
     if (current_user.has_role? :free_iosbc) || (current_user.has_role? :admin) || (current_user.has_role? :iosbc) || (current_user.has_role? :platnium)
       render :tour
@@ -85,7 +85,7 @@ class IosbcSec00Controller < ApplicationController
     if (current_user.has_role? :admin) || (current_user.has_role? :iosbc) || (current_user.has_role? :platnium)
       render :ios102next
     else
-      redirect_to :courses, :notice => 'Please Sign Up for iOS Bootcamp or the Full Access Subscription'
+      redirect_to :back, :notice => 'Please Sign Up for iOS Bootcamp or the Full Access Subscription'
     end
   end
 end

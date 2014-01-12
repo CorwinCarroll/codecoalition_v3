@@ -1,11 +1,11 @@
 <div class="row">
-  <div class="large-3 columns">
-  <%= render 'layouts/iosbc_nav' %>
+  <div class="large-3 columns" style="padding-bottom:10px">
+  <%= render 'layouts/iosbc_navrev' %>
   </div>
-
 
   <div class="large-9 columns">
 		<%= render 'layouts/sec00_firstapp_nav' %>
+		</br>
 			<div id="mediaplayer"></div>
 			            <script type="text/javascript">
 			                jwplayer("mediaplayer").setup({
@@ -18,7 +18,13 @@
 			            </script>
 			            <%= render 'layouts/mediaplayer' %>
 
+		<div class="row">
+			<div class="small-8 large-6 columns">
         <h1>Buttons!</h1>
+       </div>
+       <div class="small-4 large-6 columns" style="padding-top:10px">
+         <a class="button success radius right">Next Section!</a>
+       </div>
           <hr>
           	<dl class="tabs" data-tab>
 							  <dd class="active"><a href="#106-1">Notes</a></dd>

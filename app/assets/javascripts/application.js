@@ -29,3 +29,13 @@ $(function() {
         }, 40);
     }).resize();
 });
+
+//deep linking
+if(window.location.hash){
+    $('dl.tabs dd a').each(function(){
+        var hash = '#' + $(this).attr('href').split('#')[1];
+        if(hash == window.location.hash){
+            $(this).click();
+        }
+    });
+}
