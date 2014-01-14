@@ -21,6 +21,7 @@ gem 'simple_form', "~> 3.0.1"
 gem 'protected_attributes'
 gem "stripe", "~>1.9.9"
 gem "stripe_event", "~> 1.0.0"
+gem "nprogress-rails", "~> 0.1.2.3" 
 
 group :development do
   gem 'better_errors'

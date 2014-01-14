@@ -39,3 +39,4 @@ if(window.location.hash){
         }
     });
 }
+
