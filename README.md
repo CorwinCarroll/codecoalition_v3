@@ -20,6 +20,8 @@ To Do:
 * Reconfigure Administative User Page find param:id error
 * Add Profile Pages
 * Reconfigure cucumber related tests
+* Add SSL
+* Secure streaming/download links behind authorization and update permissions
 
 Fancy Stuff:
 --------------------------------
