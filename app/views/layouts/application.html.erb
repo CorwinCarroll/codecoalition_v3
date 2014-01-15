@@ -6,6 +6,7 @@
   <%= render 'layouts/disscusionheader' %>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%= yield :head %>
 
     <title><%= content_for?(:title) ? yield(:title) : "Code Coalition" %></title>
 
@@ -14,7 +15,7 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
+  <body class="<%= controller_name %> <%= action_name %>">
 
     <%= render 'layouts/mainnav' %>
       <%= render 'layouts/message' %>
@@ -30,8 +31,6 @@
   </div>
 </div>
     <a class="exit-off-canvas"></a>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" defer></script>
 
      <script>
       $('#scope').foundation();
