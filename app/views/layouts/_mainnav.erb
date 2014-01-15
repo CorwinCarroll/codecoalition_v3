@@ -57,7 +57,7 @@
           <li><%= link_to('Login', new_user_session_path) %></li>
           <li><%= link_to('Register', new_user_registration_path) %></li>
         <% end %>
-          <% if can? :view, @iosbc %>
+          <% if can? :view, :iosbc %>
             <li><label>My Courses</label></li>
             <li><%= link_to('iOSBootcamp', content_iosbc_path) %></li>
           <% end %>

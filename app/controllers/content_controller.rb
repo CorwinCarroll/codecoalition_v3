@@ -10,7 +10,7 @@ class ContentController < ApplicationController
   end
 
   def iosbc
-   if (current_user.has_role? :free_iosbc) || (current_user.has_role? :iosbc) || (current_user.has_role? :admin)  || (current_user.has_role? :platnium)
+   if (current_user.has_role? :free_iosbc) || (current_user.has_role? :iosbc) || (current_user.has_role? :admin)  || (current_user.has_role? :platinum)
       render :iosbc
     else
       redirect_to :root, :alert => 'Access Limited to iOS Bootcamp Students.'

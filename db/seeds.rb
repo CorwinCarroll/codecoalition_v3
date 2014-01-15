@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 puts 'ROLES'
 YAML.load(ENV['ROLES']).each do |role|
-  Role.find_or_create_by_name( :name => role )
+  Role.find_or_create_by_name(:name => role)
   puts 'role: ' << role
 end
 puts 'DEFAULT USERS'
