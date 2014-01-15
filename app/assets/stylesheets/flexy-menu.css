@@ -1,5 +1,4 @@
 
-@import "font-awesome.css";
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 /*******************************************************************************
@@ -26,7 +25,7 @@
 }
 .flexy-menu > li > a {
 	padding:20px 22px;
-	color:#ccc;
+	color:#fff;
 	text-decoration:none;
 	display:block;
 	text-transform:uppercase;
