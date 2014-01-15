@@ -41,3 +41,6 @@ if(window.location.hash){
     });
 }
 
+$(document).on('ready page:load', function () {
+  // Actions to do
+});

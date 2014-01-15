@@ -1,4 +1,4 @@
-11
+
 jQuery.fn.flexymenu = function(options){
 	var settings = {
 		 speed	 			: 300     				// dropdown speed (ms)
