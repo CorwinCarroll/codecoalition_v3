@@ -17,9 +17,11 @@ To Do:
 * Inspect CSS to find confilicting video player elements (creating the wings on the clocks)
 * Update "My Courses" view permission
 # Add Stripe Payments
-* Reconfigure Administative User Page find param:id error
 * Add Profile Pages
 * Reconfigure cucumber related tests
+* Change auto email to info@codecoalition.com
+* Add SSL
+* Secure streaming/download links behind authorization and update permissions
 
 Fancy Stuff:
 --------------------------------
@@ -32,3 +34,4 @@ Feature Request:
 
 Completed:
 --------------------------------
+* Reconfigure Administative User Page find param:id error
