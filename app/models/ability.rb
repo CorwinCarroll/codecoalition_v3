@@ -7,7 +7,10 @@ class Ability
       can :manage, :all
     else
       can :view, :free_iosbc if user.has_role? :free_iosbc
+
       can :view, :iosbc if user.has_role? :iosbc
+      can :view, :free_iosbc if user.has_role? :iosbc
+      
       can :view, :platinum if user.has_role? :platinum
       can :view, :free_iosbc if user.has_role? :platinum
       can :view, :iosbc if user.has_role? :platinum
