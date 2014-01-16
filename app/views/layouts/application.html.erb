@@ -9,13 +9,13 @@
   <%= render 'layouts/disscusionheader' %>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <%= yield :head %>
-
     <title><%= content_for?(:title) ? yield(:title) : "Code Coalition" %></title>
-
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Code Coalition" %>">
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= stylesheet_link_tag    "application" %>
     <%= csrf_meta_tags %>
+    <%= yield :head %>
+
   </head>
 
   <body class="<%= controller_name %> <%= action_name %>">
