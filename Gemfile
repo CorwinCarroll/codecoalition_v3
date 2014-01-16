@@ -49,6 +49,7 @@ group :test do
   gem "database_cleaner", "~> 1.2.0"
   gem "email_spec", "~> 1.5.0"
   gem "launchy", "~> 2.4.2"
+  gem "selenium-webdriver", "~> 2.39.0"
 end
 
 # Use ActiveModel has_secure_password
