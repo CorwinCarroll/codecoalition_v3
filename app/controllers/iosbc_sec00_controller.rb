@@ -49,9 +49,9 @@ class IosbcSec00Controller < ApplicationController
     end
   end
 
-  def button
+  def buttons
     if (current_user.has_role? :free_iosbc) || (current_user.has_role? :admin) || (current_user.has_role? :iosbc) || (current_user.has_role? :platnium)
-      render :button
+      render :buttons
     else
       redirect_to :root, :notice => 'Please Sign Up to Access our Free Content'
     end
