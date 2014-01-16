@@ -1,7 +1,5 @@
 Codecoalition3::Application.routes.draw do
 
-devise_for :users, :controllers => { :registrations => 'registrations' }
-
   authenticated :user do
     root :to => 'pages#index', as: :authenticated_root
   end
@@ -10,6 +8,12 @@ devise_for :users, :controllers => { :registrations => 'registrations' }
     root to: "pages#index", as: :unauthenticated_root
   end
 
+
+devise_for :users, :controllers => { :registrations => 'registrations' }
+devise_scope :user do
+  put 'update_plan', :to => 'registrations#update_plan'
+  put 'update_card', :to => 'registrations#update_card'
+end
 resources :users
 
 # top level routes
