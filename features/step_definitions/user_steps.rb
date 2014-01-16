@@ -1,6 +1,6 @@
 def create_visitor
   @visitor ||= { :name => "Testy McUserton", :email => "example@example.com",
-    :password => "changeme", :password_confirmation => "changeme", :role => "silver" }
+    :password => "changeme", :password_confirmation => "changeme", :role => "free_iosbc" }
 end
 
 def find_user
@@ -137,8 +137,8 @@ When /^I delete my account$/ do
   page.driver.browser.switch_to.alert.accept
 end
 
-When /^I follow the subscribe for silver path$/ do
-  visit '/users/sign_up/?plan=silver'
+When /^I follow the subscribe for free_iosbc path$/ do
+  visit '/users/sign_up/?plan=free_iosbc'
 end
 
 ### THEN ###
@@ -161,8 +161,8 @@ Then /^I should be on the "([^"]*)" page$/ do |path_name|
   current_path.should == send("#{path_name.parameterize('_')}_path")
 end
 
-Then /I should be on the new silver user registration page$/ do
-  current_path_with_args.should == '/users/sign_up/?plan=silver'
+Then /I should be on the new free_iosbc user registration page$/ do
+  current_path_with_args.should == '/users/sign_up/?plan=free_iosbc'
 end
 
 Then /^I see an unconfirmed account message$/ do
